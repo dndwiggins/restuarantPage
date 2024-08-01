@@ -1,8 +1,11 @@
 import './style.css';
 
-import barback from './barback.jpeg';
+
+import loadHome from './home';
+
+loadHome();
 
 
-const myIcon = document.createElement('img')
+
 
 
