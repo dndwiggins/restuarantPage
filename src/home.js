@@ -1,3 +1,5 @@
+
+
 const loadHome = () => {
 
     /*        <h1>Whiskey and Rye</h1>
@@ -21,6 +23,7 @@ const loadHome = () => {
     content.appendChild(h1)
     content.appendChild(p1)
     content.appendChild(p2)
+
 
 
 
