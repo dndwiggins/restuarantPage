@@ -5,6 +5,10 @@ import loadHome from './home';
 
 import loadMenu from './menu'
 
+import loadAbout from './about';
+
+
+loadHome()
 
 
 function remove() {
@@ -18,17 +22,36 @@ function remove() {
 }
 
 
-const btns = document.querySelectorAll('#bt')
+const homebt = document.querySelector('#homebt')
 
-btns.forEach((bt) => {
+homebt.addEventListener('click', function () {
 
-    bt.addEventListener('click', function () {
+    remove()
 
-
-        remove();
-
-    });
+    loadHome()
 
 });
+
+const menubt = document.querySelector('#menubt')
+
+menubt.addEventListener('click', function () {
+
+    remove()
+
+    loadMenu()
+
+});
+
+const aboutbt = document.querySelector('#aboutbt')
+
+aboutbt.addEventListener('click', function () {
+
+    remove()
+
+    loadAbout()
+
+});
+
+
 
 
